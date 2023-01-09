@@ -1,0 +1,8 @@
+@media(max-width:818px){
+    .medias{
+        flex-direction: column;
+    }
+    .select{
+        margin-top: 1rem;
+    }
+}
