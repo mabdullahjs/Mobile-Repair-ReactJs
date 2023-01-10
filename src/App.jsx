@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbars from './components/Navbar';
-import PhoneInfo from './components/phoneInfo/PhoneInfo';
+import PhoneInfo from './components/Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
