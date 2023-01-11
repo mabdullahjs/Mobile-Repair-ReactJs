@@ -1,6 +1,8 @@
 import React from 'react'
 import "./location.css"
 import city from "../../../Assests/Images/city_190531101719.jpg"
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 function location() {
     return (
@@ -61,12 +63,25 @@ function location() {
                     </div>
                 </div>
             </div>
-            <div className="second-container bg-white">
-                <h1 className='head-one'>Find mobile repair shop near you</h1>
+            <div className="container bg-white" style={{width:"20rem" , height:"40%" , padding:"2rem" ,borderRadius:"1rem" , marginTop:"5%" , marginBottom:"5%"}}>
+                <h1 className='head-one' style={{fontSize:"1.5rem" , color:"#FB5112"}}>FIND SHOP NEAR YOU!</h1>
+                <Form>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email" placeholder="Enter email" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Contact Number</Form.Label>
+                        <Form.Control type="number" placeholder="Enter contact" />
+                    </Form.Group>
 
+                    <Button variant="primary" type="submit">
+                        Submit
+                    </Button>
+                </Form> <br /><br />
             </div>
         </div>
     )
 }
 
-export default location
+export default location;

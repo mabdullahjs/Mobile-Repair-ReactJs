@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
-import { Select, Button, Slider } from 'antd';
+import {Button} from 'antd';
 import bg from "../../Assests/Images/bg-form.jpg"
 import "./home.css"
 import Location from './locations/location';
+import Services from './services/Services';
+import Work from './works/Work';
 
 
 
 
-const handleChange = (value) => {
-    console.log(`selected ${value}`);
-};
+// const handleChange = (value) => {
+//     console.log(`selected ${value}`);
+// };
 
 
 function PhoneInfo() {
@@ -70,10 +72,11 @@ function PhoneInfo() {
     function selectModel(e) {
         mobilePhones.filter((item) => {
             if (e.target.value === item.brand) {
-                setModel(item.models)
+                return setModel(item.models);
             }
         })
     }
+    
 
 
     return (
@@ -99,6 +102,8 @@ function PhoneInfo() {
                 </div>
             </div>
             <Location/>
+            <Services/>
+            <Work/>
         </div>
     )
 }

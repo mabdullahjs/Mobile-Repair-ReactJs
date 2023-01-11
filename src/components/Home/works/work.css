@@ -1,0 +1,16 @@
+
+#hello{
+    background-color: black;
+}
+
+
+#hello:hover{
+    background-color: #fb5112;
+    transition-duration: 0.5s;
+}
+@media(max-width:900px){
+    .imgs{
+        width: 5rem ;
+        height:3rem
+    }
+}
