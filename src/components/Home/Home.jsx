@@ -14,7 +14,7 @@ import Work from './works/Work';
 // };
 
 
-function PhoneInfo() {
+function Home() {
     let [model, setModel] = useState([])
     const mobilePhones = [
         {
@@ -82,7 +82,7 @@ function PhoneInfo() {
     return (
         <div>
             <div style={{ backgroundImage: `url(${bg})`, height: "25rem", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                <h1 className='text-center'><span style={{ fontSize: "2rem", color: "#fb5112" }}>THEEK KRDAINGA</span> <span style={{ color: "#1d3a57", fontSize: "2rem" }}>KABHI BHI KAHI BHI!</span></h1>
+                <h1 className='text-center'><span style={{ fontSize: "2rem", color: "#fb5112" }}>THEEK KER DENGEY</span> <span style={{ color: "#1d3a57", fontSize: "2rem" }}>KABHI BHI KAHI BHI!</span></h1>
                 <div className='medias bg-white py-3 px-5 rounded-2 d-flex'>
 
                     <select onChange={selectModel} className="form-select form-select-sm" aria-label="Default select example" style={{ marginRight: "1rem" }}>
@@ -108,4 +108,4 @@ function PhoneInfo() {
     )
 }
 
-export default PhoneInfo;
+export default Home;

@@ -10,7 +10,7 @@ function location() {
             <div className="first-container">
                 <h1 className=' pt-5 text-white'>We Offer Services In All Over <span className='karachi'>Karachi</span></h1>
                 <p className='text-white'>Free mobile pick up and delivery service. Mobile repair at home. Book a pick up Now!</p>
-                <div className='main-div'>
+                <div className='first-main-div'>
                     <div className="">
                         <img src={city} alt="" />
                         <h1 className='text-white image-text'>hello</h1>

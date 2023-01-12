@@ -38,10 +38,10 @@ export default function Footer() {
                         <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
                             <h6 className=' mb-4'>
                                 <MDBIcon icon="gem" className="" />
-                                <img style={{width:"15rem"}} src={logo} alt="" />
+                                <img style={{ width: "15rem" }} src={logo} alt="" />
                             </h6>
                             <p>
-                            iPhone, Samsung, Realme and Xiomi are registered trademarks Theek Kar Dengey is an independent service company and is in no way affiliated with any company.
+                                iPhone, Samsung, Realme and Xiomi are registered trademarks Theek Kar Dengey is an independent service company and is in no way affiliated with any company.
                             </p>
                         </MDBCol>
 
@@ -115,9 +115,10 @@ export default function Footer() {
             </section>
 
             <div className='text-center p-4 text-white' style={{ backgroundColor: '#000' }}>
-                © 2021 Copyright:
-                <a className='text-reset fw-bold ' href='https://skysoftsol.co/'>
-                    <span> @SkySoftSolution
+
+                © 2022 QAF INTERNATIONAL - All Rights Reserved - Powered by
+                <a className='text-decoration-none ' href='http://skysoftsol.co/'>
+                    <span style={{color:"#f9a600"}}> Skysoft Solution
                     </span>
                 </a>
             </div>
