@@ -75,7 +75,7 @@ function location() {
                         <Form.Control type="number" placeholder="Enter contact" />
                     </Form.Group>
 
-                    <Button variant="primary" type="submit">
+                    <Button style={{backgroundColor:"#FB5112" , border:"none" , marginTop:"5%"}} variant="primary" type="submit">
                         Submit
                     </Button>
                 </Form> <br /><br />

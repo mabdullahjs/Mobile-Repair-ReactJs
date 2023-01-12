@@ -12,9 +12,9 @@ function Services() {
                 <p className='text-center px-5 ' style={{}}>We provide quick service process at our mobile Store. Phixman is one of the best reasonable mobile phone service store, more than 180 repairing service centers in India, where we are fixing all models of smartphones, laptops and other electronic gadgets. Our service included touch screen repair/replacement, liquid and water damage repair, broken and physical damage repair, mainboard chip-level repairing, charging port, power button, side button, camera repair, headphone jack, wifi, bluetooth, battery replacement, software troubleshoot and up-gradation.</p>
             </div>
             <div className="cardss d-flex justify-content-center flex-wrap my-5">
-                <Card className='mx-2 my-2' style={{ width: '18rem' }}>
+                <Card className='mx-2 my-2 ' style={{ width: '18rem' }}>
                     {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-                    <Card.Body>
+                    <Card.Body style={{cursor:"pointer"}}>
                         <Card.Title style={{color:"#fb5112"}}>All Brands & Models</Card.Title>
                         <Card.Text>
                         We repair all mobile & laptop brands and models!
@@ -23,7 +23,7 @@ function Services() {
                 </Card>
                 <Card className='mx-2 my-2' style={{ width: '18rem' }}>
                     {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-                    <Card.Body>
+                    <Card.Body style={{cursor:"pointer"}}>
                         <Card.Title style={{color:"#fb5112"}}>1 Day Service</Card.Title>
                         <Card.Text>
                         We repair devices in just 1 day!
@@ -32,7 +32,7 @@ function Services() {
                 </Card>
                 <Card className='mx-2 my-2' style={{ width: '18rem' }}>
                     {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-                    <Card.Body>
+                    <Card.Body style={{cursor:"pointer"}}>
                         <Card.Title style={{color:"#fb5112"}}>Skilled Technicians</Card.Title>
                         <Card.Text>
                         Certified professional team repair your device!
@@ -41,7 +41,7 @@ function Services() {
                 </Card>
                 <Card className='mx-2 my-2' style={{ width: '18rem' }}>
                     {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-                    <Card.Body>
+                    <Card.Body style={{cursor:"pointer"}}>
                         <Card.Title style={{color:"#fb5112"}}>Genuine Parts</Card.Title>
                         <Card.Text>
                         We provide quality & original products only!
@@ -50,7 +50,7 @@ function Services() {
                 </Card>
                 <Card className='mx-2 my-2' style={{ width: '18rem' }}>
                     {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-                    <Card.Body>
+                    <Card.Body style={{cursor:"pointer"}}>
                         <Card.Title style={{color:"#fb5112"}}>Data Security</Card.Title>
                         <Card.Text>
                         Don't worry, your data is safe with us!
@@ -59,7 +59,7 @@ function Services() {
                 </Card>
                 <Card className='mx-2 my-2' style={{ width: '18rem' }}>
                     {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-                    <Card.Body>
+                    <Card.Body style={{cursor:"pointer"}}>
                         <Card.Title style={{color:"#fb5112"}}>90 Days Warranty</Card.Title>
                         <Card.Text>
                         Genuine products with a warranty of 3 months!

@@ -89,7 +89,7 @@ function PhoneInfo() {
                         <option>Select brand</option>
                         {brandName}
                     </select>
-                    <select className="form-select form-select-sm" aria-label="Default select example" style={{ marginRight: "1rem" }}>
+                    <select id='select' className="form-select form-select-sm" aria-label="Default select example" style={{ marginRight: "1rem" }}>
                         <option>Select Model</option>
                         {model.map((item, i) => {
                             return <option key={i}>{item}</option>
@@ -97,7 +97,7 @@ function PhoneInfo() {
 
                     </select>
                     <div className="">
-                        <Button style={{ backgroundColor: "#fb5112" }} type="primary" danger size='middle'>Go For It!</Button>
+                        <Button id='go' style={{ backgroundColor: "#fb5112" }} type="primary" danger size='middle'>Go For It!</Button>
                     </div>
                 </div>
             </div>
