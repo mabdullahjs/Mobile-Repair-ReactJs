@@ -1,0 +1,10 @@
+.first{
+    width: 40%;
+}
+
+@media(max-width:900px){
+    .first{
+        width: 90%;
+
+    }
+}

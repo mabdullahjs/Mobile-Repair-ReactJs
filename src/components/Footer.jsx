@@ -48,22 +48,22 @@ export default function Footer() {
                         <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
                             <h6 className='text-uppercase fw-bold mb-4'>Start Your Repair</h6>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <a href='/' className='text-reset text-decoration-none'>
                                     FAQ
                                 </a>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <a href='/' className='text-reset text-decoration-none'>
                                     Track Your Order
                                 </a>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <a href='/' className='text-reset text-decoration-none'>
                                     Contact Us
                                 </a>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <a href='/' className='text-reset text-decoration-none'>
                                     Feedback
                                 </a>
                             </p>
@@ -116,7 +116,7 @@ export default function Footer() {
 
             <div className='text-center p-4 text-white' style={{ backgroundColor: '#000' }}>
 
-                © 2022 QAF INTERNATIONAL - All Rights Reserved - Powered by
+                © 2022 THEEK KAR DENGEY - All Rights Reserved - Powered by
                 <a className='text-decoration-none ' href='http://skysoftsol.co/'>
                     <span style={{color:"#f9a600"}}> Skysoft Solution
                     </span>

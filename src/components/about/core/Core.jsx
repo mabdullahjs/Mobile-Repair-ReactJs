@@ -9,13 +9,13 @@ function Core() {
          <hr />
          </div>
         <div className="three">
-            <div className="first">
+            <div className="second">
                 <h2 className='head-two'>Positive & Optimistic</h2>
-                <p className='para'>How all this mistaken idea of denouncing pleasure and praising pain was born and we will give you a complete account seds of the system</p>
+                <p className='para'>Some great pleasure take trivial example, whichof ever undertakes laborious physical expect to obtain some advantages.</p>
             </div>
             <div className="second">
                 <h2 className='head-two'>Wow Customer Service</h2>
-                <p className='para'>Some great pleasure take trivial example, whichof ever undertakes laborious physical expect to obtain some advantages.</p>
+                <p className='para'>How all this mistaken idea of denouncing pleasure and praising pain was born and we will give you a complete account seds of the system.</p>
             </div>
             <div className="third">
                 <h2 className='head-two'>Love Customer</h2>

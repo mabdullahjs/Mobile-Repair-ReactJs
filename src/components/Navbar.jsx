@@ -16,8 +16,8 @@ function Navbars() {
           <Nav.Link><Link to="/" className='text-dark text-decoration-none'>Home</Link></Nav.Link>
             <Nav.Link><Link to="/about" className='text-dark text-decoration-none'>About</Link></Nav.Link>
             <NavDropdown title="Support" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/">FAQ</NavDropdown.Item>
-              <NavDropdown.Item href="/">Feedback</NavDropdown.Item>
+              <NavDropdown.Item href="/"><Link to="/faqs" className='text-dark text-decoration-none'>FAQ's</Link></NavDropdown.Item>
+              <NavDropdown.Item href="/"><Link to="/feedback" className='text-dark text-decoration-none'>Feedback</Link></NavDropdown.Item>
             </NavDropdown>
             <Nav.Link  href="/">Contact</Nav.Link>
             <Nav.Link  href="/">Pay Online</Nav.Link>
