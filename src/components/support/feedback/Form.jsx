@@ -88,7 +88,7 @@ function Forms() {
                 </Row>
                 </div>
 
-                <Button onClick={getVal} variant="primary">
+                <Button style={{backgroundColor:"#fb5112" , border:"none"}} onClick={getVal} variant="primary">
                     Submit
                 </Button>
             </Form>
