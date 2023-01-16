@@ -1,6 +1,7 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import logo from "../Assests/Images/TKD.png"
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -48,24 +49,24 @@ export default function Footer() {
                         <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
                             <h6 className='text-uppercase fw-bold mb-4'>Start Your Repair</h6>
                             <p>
-                                <a href='/' className='text-reset text-decoration-none'>
+                                <Link to='/faqs' className='text-reset text-decoration-none'>
                                     FAQ
-                                </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href='/' className='text-reset text-decoration-none'>
+                                <Link to='/terms' className='text-reset text-decoration-none'>
                                     Track Your Order
-                                </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href='/' className='text-reset text-decoration-none'>
+                                <Link to='/contact' className='text-reset text-decoration-none'>
                                     Contact Us
-                                </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href='/' className='text-reset text-decoration-none'>
+                                <Link to='/feedback' className='text-reset text-decoration-none'>
                                     Feedback
-                                </a>
+                                </Link>
                             </p>
                         </MDBCol>
 

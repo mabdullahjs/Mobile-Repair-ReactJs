@@ -9,6 +9,7 @@ import Faqs from './components/support/faqs/Faqs';
 import Feedback from './components/support/feedback/Feedback';
 import Contact from './components/contact/Contact';
 import Payonline from './components/pay-online/Payonline';
+import Terms from './components/terms-and-cond/Terms';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/feedback" element={<Feedback/>} />
         <Route exact path="/contact" element={<Contact/>} />
         <Route exact path="/payonline" element={<Payonline/>} />
+        <Route exact path="/terms" element={<Terms/>} />
       </Routes>
       <Footer />
     </Router>

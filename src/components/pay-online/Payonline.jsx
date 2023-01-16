@@ -1,6 +1,5 @@
 import React from 'react'
 import bg from "../../Assests/Images/banner7.jpg"
-import { AiFillPhone, AiOutlineWhatsApp, AiTwotoneMail } from "react-icons/ai";
 import easypaisa from "../../Assests/Images/easypaisa.png"
 import jaaz from "../../Assests/Images/jaazcash.jpg"
 import nayapay from "../../Assests/Images/nayapay.jpg"
