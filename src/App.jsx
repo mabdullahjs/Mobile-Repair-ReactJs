@@ -10,6 +10,7 @@ import Feedback from './components/support/feedback/Feedback';
 import Contact from './components/contact/Contact';
 import Payonline from './components/pay-online/Payonline';
 import Terms from './components/terms-and-cond/Terms';
+import Product from './components/Home/Product';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route exact path="/contact" element={<Contact/>} />
         <Route exact path="/payonline" element={<Payonline/>} />
         <Route exact path="/terms" element={<Terms/>} />
+        <Route exact path="/terms" element={<Terms/>} />
+        <Route exact path="/product" element={<Product/>} />
       </Routes>
       <Footer />
     </Router>

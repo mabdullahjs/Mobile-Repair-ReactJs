@@ -1,21 +1,17 @@
 import React, { useState } from 'react'
-import {Button} from 'antd';
 import bg from "../../Assests/Images/bg-form.jpg"
 import "./home.css"
 import Location from './locations/location';
 import Services from './services/Services';
 import Work from './works/Work';
+import { Link } from 'react-router-dom';
 
 
-
-
-// const handleChange = (value) => {
-//     console.log(`selected ${value}`);
-// };
 
 
 function Home() {
-    let [model, setModel] = useState([])
+    let [model, setModel] = useState([]);
+    let [product, setProduct] = useState("");
     const mobilePhones = [
         {
             brand: 'Samsung',
@@ -74,38 +70,42 @@ function Home() {
             if (e.target.value === item.brand) {
                 return setModel(item.models);
             }
+
         })
     }
-    
-
+    function modelName(e) {
+        setProduct(e.target.value);
+        console.log(e.target.value);
+        localStorage.setItem("model" , e.target.value);
+    }
 
     return (
-        <div>
-            <div style={{ backgroundImage: `url(${bg})`, height: "25rem", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                <h1 className='text-center'><span style={{ fontSize: "2rem", color: "#fb5112" }}>THEEK KER DENGEY</span> <span style={{ color: "#1d3a57", fontSize: "2rem" }}>KABHI BHI KAHI BHI!</span></h1>
-                <div className='medias bg-white py-3 px-5 rounded-2 d-flex'>
+            <div>
+                <div style={{ backgroundImage: `url(${bg})`, height: "25rem", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+                    <h1 className='text-center'><span style={{ fontSize: "2rem", color: "#fb5112" }}>THEEK KER DENGEY</span> <span style={{ color: "#1d3a57", fontSize: "2rem" }}>KABHI BHI KAHI BHI!</span></h1>
+                    <div className='medias bg-white py-3 px-5 rounded-2 d-flex'>
 
-                    <select onChange={selectModel} className="form-select form-select-sm" aria-label="Default select example" style={{ marginRight: "1rem" }}>
-                        <option>Select brand</option>
-                        {brandName}
-                    </select>
-                    <select id='select' className="form-select form-select-sm" aria-label="Default select example" style={{ marginRight: "1rem" }}>
-                        <option>Select Model</option>
-                        {model.map((item, i) => {
-                            return <option key={i}>{item}</option>
-                        })}
+                        <select required onChange={selectModel} className="form-select form-select-sm" aria-label="Default select example" style={{ marginRight: "1rem", height: "2rem" }}>
+                            <option>Select brand</option>
+                            {brandName}
+                        </select>
+                        <select required onChange={modelName} id='select' className="form-select form-select-sm" aria-label="Default select example" style={{ marginRight: "1rem", height: "2rem" }}>
+                            <option>Select Model</option>
+                            {model.map((item, i) => {
+                                return <option key={i}>{item}</option>
+                            })}
 
-                    </select>
-                    <div className="">
-                        <Button id='go' style={{ backgroundColor: "#fb5112" }} type="primary" danger size='middle'>Go For It!</Button>
+                        </select>
+                        <div className="">
+                            <Link to="/product"><button disabled={product == "" ? true : false} id='go' style={{ backgroundColor: "#fb5112", color: "white", borderRadius: "5px", border: "none", padding: "0.3rem", paddingLeft: "0.5rem", paddingRight: "0.5rem", height: "2rem" }} >Submit</button></Link>
+                        </div>
                     </div>
                 </div>
+                <Location />
+                <Services />
+                <Work />
             </div>
-            <Location/>
-            <Services/>
-            <Work/>
-        </div>
     )
 }
 
-export default Home;
+export default Home
