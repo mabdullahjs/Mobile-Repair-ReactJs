@@ -10,7 +10,7 @@ import Feedback from './components/support/feedback/Feedback';
 import Contact from './components/contact/Contact';
 import Payonline from './components/pay-online/Payonline';
 import Terms from './components/terms-and-cond/Terms';
-import Product from './components/Home/Product';
+import Product from './components/Home/product/Product';
 
 function App() {
   return (
