@@ -1,10 +1,13 @@
-import React, { useContext, useState } from 'react'
-import Button from 'react-bootstrap/Button';
+import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
 import { AiTwotoneShopping } from "react-icons/ai"
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 function Product() {
+    const MySwal = withReactContent(Swal)
     let model = localStorage.getItem("model");
+    let [product , setProduct] = useState([]);
 
     let myArr = [
         {
@@ -5489,27 +5492,39 @@ function Product() {
 
             ]
         }];
-    let data = myArr.map((item)=>{
-        if(item.model === model){
-            return item.service.map((items)=>{
-                return<Card style={{ width: '18rem', marginTop: "2rem" }}> <Card.Body>
-                <Card.Title className='text-center'>Service: {items.service}</Card.Title>
-                <Card.Text className='text-center'>
-                    Rs: {items.Rs}
-                </Card.Text>
-                <h3 style={{ cursor: "pointer" }} className='text-center'><AiTwotoneShopping /></h3>
-            </Card.Body>
-            </Card>
+    let data = myArr.map((item) => {
+        if (item.model === model) {
+            return item.service.map((items, index) => {
+                return <Card key={index} style={{ width: '18rem', marginTop: "2rem" }}> <Card.Body>
+                    <Card.Title className='text-center'>Service: {items.service}</Card.Title>
+                    <Card.Text className='text-center'>
+                        Rs: {items.Rs}
+                    </Card.Text>
+                    <h3 style={{ cursor: "pointer" }} className='text-center'><AiTwotoneShopping onClick={addCart} /></h3>
+                </Card.Body>
+                </Card>
             })
         }
     })
 
+    function addCart() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Product Added to Cart Successfuly',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    }
+
     return (
         <div>
+            {/* <Alert style={{ visibility: `${display}` }} message="Product Add to Basket Successfully" type="success" />; */}
             <h1 className='text-center'>Service for <span style={{ color: "#fb5112" }}>{model}</span></h1>
             <div className='container d-flex justify-content-evenly flex-wrap'>
                 {data}
             </div>
+
         </div>
 
     )

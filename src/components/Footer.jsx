@@ -34,9 +34,9 @@ export default function Footer() {
       </section> */}
 
             <section className=''>
-                <MDBContainer className='text-center text-md-start mt-5'>
+                <MDBContainer  className='text-center text-md-start'>
                     <MDBRow className='mt-3'>
-                        <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
+                        <MDBCol style={{marginTop:"3rem"}} md="3" lg="4" xl="3" className='mx-auto mb-4'>
                             <h6 className=' mb-4'>
                                 <MDBIcon icon="gem" className="" />
                                 <img style={{ width: "15rem" }} src={logo} alt="" />
@@ -46,7 +46,7 @@ export default function Footer() {
                             </p>
                         </MDBCol>
 
-                        <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
+                        <MDBCol style={{marginTop:"4rem"}} md="2" lg="2" xl="2" className='mx-auto mb-4'>
                             <h6 className='text-uppercase fw-bold mb-4'>Start Your Repair</h6>
                             <p>
                                 <Link to='/faqs' className='text-reset text-decoration-none'>
@@ -55,7 +55,7 @@ export default function Footer() {
                             </p>
                             <p>
                                 <Link to='/terms' className='text-reset text-decoration-none'>
-                                    Track Your Order
+                                    Terms & Conditions
                                 </Link>
                             </p>
                             <p>
@@ -94,7 +94,7 @@ export default function Footer() {
                             </p>
                         </MDBCol> */}
 
-                        <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
+                        <MDBCol style={{marginTop:"4rem"}} md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
                             <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
                             <p>
                                 <MDBIcon icon="home" className="me-2" />

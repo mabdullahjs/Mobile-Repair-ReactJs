@@ -15,7 +15,7 @@ import Product from './components/Home/product/Product';
 function App() {
   return (
     <Router>
-      <Navbars />
+      <Navbars/>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
