@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { AiTwotoneShopping } from "react-icons/ai"
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2'
 
 function Product(props) {
@@ -12,7 +13,7 @@ function Product(props) {
 
     let myArr = [
         {
-            model: 'A02',
+            model: 'Samsung A02',
             service: [
                 {
                     service: "Back Camera",
@@ -101,7 +102,7 @@ function Product(props) {
 
         },
         {
-            model: 'A12',
+            model: 'Samsung A12',
             service: [
                 {
                     service: "Back Camera",
@@ -188,7 +189,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A10',
+            model: 'Samsung A10',
             service: [
                 {
                     service: "Back Camera",
@@ -275,7 +276,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A21s',
+            model: 'Samsung A21s',
             service: [
                 {
                     service: "Back Camera",
@@ -362,7 +363,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'J5prime',
+            model: 'Samsung J5prime',
             service: [
                 {
                     service: "Back Camera",
@@ -449,7 +450,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'J6+',
+            model: 'Samsung J6+',
             service: [
                 {
                     service: "Back Camera",
@@ -536,7 +537,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'J4+',
+            model: 'Samsung J4+',
             service: [
                 {
                     service: "Back Camera",
@@ -623,7 +624,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'J727',
+            model: 'Samsung J727',
             service: [
                 {
                     service: "Back Camera",
@@ -710,7 +711,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A7 Led',
+            model: 'Samsung A7 Led',
             service: [
                 {
                     service: "Back Camera",
@@ -796,7 +797,7 @@ function Product(props) {
 
             ]
         }, {
-            model: 'E7 Led',
+            model: 'Samsung E7 Led',
             service: [
                 {
                     service: "Back Camera",
@@ -883,7 +884,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A310 ogs',
+            model: 'Samsung A310 ogs',
             service: [
                 {
                     service: "Back Camera",
@@ -970,7 +971,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'J7 TFT',
+            model: 'Samsung J7 TFT',
             service: [
                 {
                     service: "Back Camera",
@@ -1057,7 +1058,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'G750',
+            model: 'Huawei G750',
             service: [
                 {
                     service: "Back Camera",
@@ -1144,7 +1145,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'Mate 10lite',
+            model: 'Huawei Mate 10lite',
             service: [
                 {
                     service: "Back Camera",
@@ -1231,7 +1232,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'Psmart 2019',
+            model: 'Huawei Psmart 2019',
             service: [
                 {
                     service: "Back Camera",
@@ -1318,7 +1319,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'P10lite',
+            model: 'Huawei P10lite',
             service: [
                 {
                     service: "Back Camera",
@@ -1405,7 +1406,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'P8lite',
+            model: 'Huawei P8lite',
             service: [
                 {
                     service: "Back Camera",
@@ -1492,7 +1493,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'Y5p17',
+            model: 'Huawei Y5p17',
             service: [
                 {
                     service: "Back Camera",
@@ -1579,7 +1580,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'Y5p18',
+            model: 'Huawei Y5p18',
             service: [
                 {
                     service: "Back Camera",
@@ -1666,7 +1667,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'Y6p17',
+            model: 'Huawei Y6p17',
             service: [
                 {
                     service: "Back Camera",
@@ -1753,7 +1754,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'Y9popup',
+            model: 'Huawei Y9popup',
             service: [
                 {
                     service: "Back Camera",
@@ -2014,7 +2015,7 @@ function Product(props) {
             ]
         },
         {
-            model: '6g',
+            model: 'Iphone 6g',
             service: [
                 {
                     service: "Back Camera",
@@ -2101,7 +2102,7 @@ function Product(props) {
             ]
         },
         {
-            model: '6p',
+            model: 'Iphone 6p',
             service: [
                 {
                     service: "Back Camera",
@@ -2188,7 +2189,7 @@ function Product(props) {
             ]
         },
         {
-            model: '6s',
+            model: 'Iphone 6s',
             service: [
                 {
                     service: "Back Camera",
@@ -2275,7 +2276,7 @@ function Product(props) {
             ]
         },
         {
-            model: ' 7g',
+            model: 'Iphone 7g',
             service: [
                 {
                     service: "Back Camera",
@@ -2362,7 +2363,7 @@ function Product(props) {
             ]
         },
         {
-            model: '7p',
+            model: 'Iphone 7p',
             service: [
                 {
                     service: "Back Camera",
@@ -2449,7 +2450,7 @@ function Product(props) {
             ]
         },
         {
-            model: '4a',
+            model: 'Iphone 4a',
             service: [
                 {
                     service: "Back Camera",
@@ -2536,7 +2537,7 @@ function Product(props) {
             ]
         },
         {
-            model: '4x',
+            model: 'Iphone 4x',
             service: [
                 {
                     service: "Back Camera",
@@ -2623,7 +2624,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A49',
+            model: 'Itel A49',
             service: [
                 {
                     service: "Back Camera",
@@ -2710,7 +2711,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'X626',
+            model: 'Infinix X626',
             service: [
                 {
                     service: "Back Camera",
@@ -2797,7 +2798,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'X627',
+            model: 'Infinix X627',
             service: [
                 {
                     service: "Back Camera",
@@ -2884,7 +2885,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'X650',
+            model: 'Infinix X650',
             service: [
                 {
                     service: "Back Camera",
@@ -2971,7 +2972,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'X652',
+            model: 'Infinix X652',
             service: [
                 {
                     service: "Back Camera",
@@ -3058,7 +3059,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'X655',
+            model: 'Infinix X655',
             service: [
                 {
                     service: "Back Camera",
@@ -3145,7 +3146,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'X653',
+            model: 'Infinix X653',
             service: [
                 {
                     service: "Back Camera",
@@ -3232,7 +3233,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'X657',
+            model: 'Infinix X657',
             service: [
                 {
                     service: "Back Camera",
@@ -3319,7 +3320,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'X680',
+            model: 'Infinix X680',
             service: [
                 {
                     service: "Back Camera",
@@ -3406,7 +3407,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'X682',
+            model: 'Infinix X682',
             service: [
                 {
                     service: "Back Camera",
@@ -3493,7 +3494,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'X688',
+            model: 'Infinix X688',
             service: [
                 {
                     service: "Back Camera",
@@ -3580,7 +3581,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'X69',
+            model: 'Infinix X690',
             service: [
                 {
                     service: "Back Camera",
@@ -3667,7 +3668,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A16',
+            model: 'OPPO A16',
             service: [
                 {
                     service: "Back Camera",
@@ -3754,7 +3755,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A32',
+            model: 'OPPO A32',
             service: [
                 {
                     service: "Back Camera",
@@ -3841,7 +3842,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A53',
+            model: 'OPPO A53',
             service: [
                 {
                     service: "Back Camera",
@@ -3928,7 +3929,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A3S',
+            model: 'OPPO A3S',
             service: [
                 {
                     service: "Back Camera",
@@ -4015,7 +4016,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A5 2020',
+            model: 'OPPO A5 2020',
             service: [
                 {
                     service: "Back Camera",
@@ -4102,7 +4103,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A5S',
+            model: 'OPPO A5S',
             service: [
                 {
                     service: "Back Camera",
@@ -4189,7 +4190,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A7',
+            model: 'OPPO A7',
             service: [
                 {
                     service: "Back Camera",
@@ -4276,7 +4277,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A12',
+            model: 'OPPO A12',
             service: [
                 {
                     service: "Back Camera",
@@ -4363,7 +4364,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'C11',
+            model: 'OPPO C11',
             service: [
                 {
                     service: "Back Camera",
@@ -4450,7 +4451,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'F1S',
+            model: 'OPPO F1S',
             service: [
                 {
                     service: "Back Camera",
@@ -4537,7 +4538,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'F5',
+            model: 'OPPO F5',
             service: [
                 {
                     service: "Back Camera",
@@ -4624,7 +4625,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'F7',
+            model: 'OPPO F7',
             service: [
                 {
                     service: "Back Camera",
@@ -4711,7 +4712,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'F9',
+            model: 'OPPO F9',
             service: [
                 {
                     service: "Back Camera",
@@ -4798,7 +4799,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A57',
+            model: 'OPPO A57',
             service: [
                 {
                     service: "Back Camera",
@@ -4885,7 +4886,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'A37',
+            model: 'OPPO A37',
             service: [
                 {
                     service: "Back Camera",
@@ -4972,7 +4973,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'Y11',
+            model: 'VIVO Y11',
             service: [
                 {
                     service: "Back Camera",
@@ -5059,7 +5060,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'Y19',
+            model: 'VIVO Y19',
             service: [
                 {
                     service: "Back Camera",
@@ -5146,7 +5147,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'Y20',
+            model: 'VIVO Y20',
             service: [
                 {
                     service: "Back Camera",
@@ -5233,7 +5234,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'Y33S',
+            model: 'VIVO Y33S',
             service: [
                 {
                     service: "Back Camera",
@@ -5320,7 +5321,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'Y91',
+            model: 'VIVO Y91',
             service: [
                 {
                     service: "Back Camera",
@@ -5407,7 +5408,7 @@ function Product(props) {
             ]
         },
         {
-            model: 'S1 TFT',
+            model: 'VIVO S1 TFT',
             service: [
                 {
                     service: "Back Camera",
@@ -5492,7 +5493,182 @@ function Product(props) {
 
 
             ]
-        }];
+        },
+        {
+            model: 'xiomi 4a',
+            service: [
+                {
+                    service: "Back Camera",
+                    Rs: "8500.00"
+                },
+                {
+                    service: "Back Panel",
+                    Rs: "11500.00"
+                },
+                {
+                    service: "Battery",
+                    Rs: "8500.00"
+                },
+                {
+                    service: "Cabinet Or Frame",
+                    Rs: "11500.00"
+                },
+                {
+                    service: "Camera Glass",
+                    Rs: "4999.00"
+                },
+                {
+                    service: "Charge Port",
+                    Rs: "9500.00"
+                },
+                {
+                    service: "Dead Phone Diagnosis",
+                    Rs: "150.00"
+                },
+                {
+                    service: "Ear Speaker",
+                    Rs: "6600.00"
+                },
+                {
+                    service: "Front Camera",
+                    Rs: "8999.00"
+                },
+                {
+                    service: "Loud Speaker",
+                    Rs: "8500.00"
+                },
+                {
+                    service: "Microphone",
+                    Rs: "10500.00"
+                },
+                {
+                    service: "Motherboard Repair",
+                    Rs: "68999.00"
+                },
+                {
+                    service: "Phone Diagnosis",
+                    Rs: "1.00"
+                },
+                {
+                    service: "Phone Servicing",
+                    Rs: "34499.00"
+                },
+                {
+                    service: "Rear Camera",
+                    Rs: "16500.00"
+                },
+                {
+                    service: "Software Diagnosis",
+                    Rs: "5500.00"
+                },
+                {
+                    service: "Touch And Lcd",
+                    Rs: "45999.00"
+                },
+                {
+                    service: "Touch Screen / Glass",
+                    Rs: "8500.00"
+                },
+                {
+                    service: "Volume And Power Button",
+                    Rs: "6000.00"
+                },
+                {
+                    service: "Water Diagnosis",
+                    Rs: "999.00"
+                },
+
+
+            ]
+        },
+        {
+            model: 'xiomi 4x',
+            service: [
+                {
+                    service: "Back Camera",
+                    Rs: "8500.00"
+                },
+                {
+                    service: "Back Panel",
+                    Rs: "11500.00"
+                },
+                {
+                    service: "Battery",
+                    Rs: "8500.00"
+                },
+                {
+                    service: "Cabinet Or Frame",
+                    Rs: "11500.00"
+                },
+                {
+                    service: "Camera Glass",
+                    Rs: "4999.00"
+                },
+                {
+                    service: "Charge Port",
+                    Rs: "9500.00"
+                },
+                {
+                    service: "Dead Phone Diagnosis",
+                    Rs: "150.00"
+                },
+                {
+                    service: "Ear Speaker",
+                    Rs: "6600.00"
+                },
+                {
+                    service: "Front Camera",
+                    Rs: "8999.00"
+                },
+                {
+                    service: "Loud Speaker",
+                    Rs: "8500.00"
+                },
+                {
+                    service: "Microphone",
+                    Rs: "10500.00"
+                },
+                {
+                    service: "Motherboard Repair",
+                    Rs: "68999.00"
+                },
+                {
+                    service: "Phone Diagnosis",
+                    Rs: "1.00"
+                },
+                {
+                    service: "Phone Servicing",
+                    Rs: "34499.00"
+                },
+                {
+                    service: "Rear Camera",
+                    Rs: "16500.00"
+                },
+                {
+                    service: "Software Diagnosis",
+                    Rs: "5500.00"
+                },
+                {
+                    service: "Touch And Lcd",
+                    Rs: "45999.00"
+                },
+                {
+                    service: "Touch Screen / Glass",
+                    Rs: "8500.00"
+                },
+                {
+                    service: "Volume And Power Button",
+                    Rs: "6000.00"
+                },
+                {
+                    service: "Water Diagnosis",
+                    Rs: "999.00"
+                },
+
+
+            ]
+        }
+    ];
     let data = myArr.map((item) => {
         if (item.model === model) {
             return item.service.map((items, index) => {
@@ -5518,45 +5694,25 @@ function Product(props) {
             timer: 1500,
         })
         setBlock("block")
-
-        // setProduct([...product, {
-        //     service: myArr[0].service[i].service,
-        //     price: myArr[0].service[i].Rs
-        // }]);
-        // props.func(product);
-
-        if(product.length === 0){
-            setProduct(product.push({
-                service: myArr[0].service[i].service,
-                price: myArr[0].service[i].Rs
-            }))
-            props.func(product);
-        }else{
-            setProduct([...product, {
-                service: myArr[0].service[i].service,
-                price: myArr[0].service[i].Rs
-            }]);
-            props.func(product);
-        }
-        // setProduct(product.push({
-        //     service: myArr[0].service[i].service,
-        //     price: myArr[0].service[i].Rs
-        // }))
-        // props.func(product);
-
+        product.push({
+            service: myArr[0].service[i].service,
+            price: myArr[0].service[i].Rs,
+            models: model
+        });
+        setProduct(product)
+        props.func(product);
     }
 
     return (
         <div>
             <h1 className='text-center'>Service for <span style={{ color: "#fb5112" }}>{model}</span></h1>
             <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
-                <Button style={{ backgroundColor: "#fb5112", border: "none", display: `${block}` }}>Go To Cart</Button>
+                <Button style={{ backgroundColor: "#fb5112", border: "none", display: `${block}` }}><Link to="/cart" style={{ textDecoration: "none", color: "white" }}>Go To Cart</Link></Button>
             </div>
             <div className='container d-flex justify-content-evenly flex-wrap'>
                 {data}
             </div>
         </div>
-
     )
 }
 

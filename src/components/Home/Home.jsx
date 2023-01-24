@@ -12,11 +12,11 @@ function Home() {
 
     const mobilePhones = [{
         brand: 'Samsung',
-        models: ['A02', 'A12', 'A10', 'A21s', 'J5prime', 'J6+', 'J4+', 'J727', 'A7 Led', 'E7 Led', 'A310 ogs', 'J7 TFT']
+        models: ['Samsung A02', 'Samsung A12', 'Samsung A10', 'Samsung A21s', 'Samsung J5prime', 'Samsung J6+', 'Samsung J4+', 'Samsung J727', 'Samsung A7 Led', 'Samsung E7 Led', 'Samsung A310 ogs', 'Samsung J7 TFT']
     },
     {
         brand: 'Huawei',
-        models: ['G750', 'Mate 10lite', 'Psmart 2019', 'P10lite', 'P8lite', 'Y5p17', 'Y5p18', 'Y6p17', 'Y9popup']
+        models: ['Huawei G750', 'Huawei Mate 10lite', 'Huawei Psmart 2019', 'Huawei P10lite', 'Huawei P8lite', 'Huawei Y5p17', 'Huawei Y5p18', 'Huawei Y6p17', 'Huawei Y9popup']
     },
     {
         brand: 'Honor',
@@ -25,31 +25,31 @@ function Home() {
 
     {
         brand: 'Apple',
-        models: ['6g', '6p', '6s', ' 7g', '7p']
+        models: ['Iphone 6g', 'Iphone 6p', 'Iphone 6s', ' Iphone 7g', 'Iphone 7p']
     },
 
     {
         brand: 'Xiomi',
-        models: ['4a', '4x']
+        models: ['xiomi 4a', 'xiomi 4x']
     },
     {
         brand: 'itel',
-        models: ['A49']
+        models: ['Itel A49']
     },
     {
         brand: 'Infinix',
-        models: ['X626', 'X627', 'X650', 'X652', 'X655', 'X653', 'X657', 'X680', 'X682', 'X688', 'X69']
+        models: ['Infinix X626', 'Infinix X627', 'Infinix X650', 'Infinix X652', 'Infinix X655', 'Infinix X653', 'Infinix X657', 'Infinix X680', 'Infinix X682', 'Infinix X688', 'Infinix X69']
     },
 
 
     {
         brand: 'Oppo',
-        models: ['A16', 'A32', 'A53', 'A3S', 'A5 2020', 'A5S', 'A7', 'A12', 'C11', 'F1S', 'F5', 'F7', 'F9', 'A57', 'A37']
+        models: ['OPPO A16', 'OPPO A32', 'OPPO A53', 'OPPO A3S', 'OPPO A5 2020', 'OPPO A5S', 'OPPO A7', 'OPPO A12', 'OPPO C11', 'OPPO F1S', 'OPPO F5', 'OPPO F7', 'OPPO F9', 'OPPO A57', 'OPPO A37']
     },
 
     {
         brand: 'Vivo',
-        models: ['Y11', 'Y19', 'Y20', 'Y33S', 'Y91', 'S1 TFT']
+        models: ['VIVO Y11', 'VIVO Y19', 'VIVO Y20', 'VIVO Y33S', 'VIVO Y91', 'VIVO S1 TFT']
     }]
     let brandName = mobilePhones.map((item, i) => {
         return <option key={i}>{item.brand}</option>
