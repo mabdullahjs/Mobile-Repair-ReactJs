@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
+import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { AiTwotoneShopping } from "react-icons/ai"
 import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
 
-function Product() {
-    const MySwal = withReactContent(Swal)
+function Product(props) {
+
     let model = localStorage.getItem("model");
-    let [product , setProduct] = useState([]);
+    let [block, setBlock] = useState("none");
+    let [product, setProduct] = useState([]);
 
     let myArr = [
         {
@@ -5500,31 +5501,60 @@ function Product() {
                     <Card.Text className='text-center'>
                         Rs: {items.Rs}
                     </Card.Text>
-                    <h3 style={{ cursor: "pointer" }} className='text-center'><AiTwotoneShopping onClick={addCart} /></h3>
+                    <h3 style={{ cursor: "pointer" }} className='text-center'><AiTwotoneShopping onClick={() => addCart(index)} /></h3>
                 </Card.Body>
                 </Card>
             })
         }
+        return ""
     })
 
-    function addCart() {
+    function addCart(i) {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
             title: 'Product Added to Cart Successfuly',
             showConfirmButton: false,
-            timer: 1500
-          })
+            timer: 1500,
+        })
+        setBlock("block")
+
+        // setProduct([...product, {
+        //     service: myArr[0].service[i].service,
+        //     price: myArr[0].service[i].Rs
+        // }]);
+        // props.func(product);
+
+        if(product.length === 0){
+            setProduct(product.push({
+                service: myArr[0].service[i].service,
+                price: myArr[0].service[i].Rs
+            }))
+            props.func(product);
+        }else{
+            setProduct([...product, {
+                service: myArr[0].service[i].service,
+                price: myArr[0].service[i].Rs
+            }]);
+            props.func(product);
+        }
+        // setProduct(product.push({
+        //     service: myArr[0].service[i].service,
+        //     price: myArr[0].service[i].Rs
+        // }))
+        // props.func(product);
+
     }
 
     return (
         <div>
-            {/* <Alert style={{ visibility: `${display}` }} message="Product Add to Basket Successfully" type="success" />; */}
             <h1 className='text-center'>Service for <span style={{ color: "#fb5112" }}>{model}</span></h1>
+            <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
+                <Button style={{ backgroundColor: "#fb5112", border: "none", display: `${block}` }}>Go To Cart</Button>
+            </div>
             <div className='container d-flex justify-content-evenly flex-wrap'>
                 {data}
             </div>
-
         </div>
 
     )

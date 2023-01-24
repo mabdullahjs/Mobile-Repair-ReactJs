@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from "../Assests/Images/TKD.png"
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {FaShoppingCart} from "react-icons/fa"
 import {Link } from "react-router-dom";
 
 function Navbars() {
@@ -21,6 +22,7 @@ function Navbars() {
             </NavDropdown>
             <Nav.Link><Link to="/contact" className='text-dark text-decoration-none'>Contact</Link></Nav.Link>
             <Nav.Link><Link to="/payonline" className='text-dark text-decoration-none'>Pay Online</Link></Nav.Link>
+            <Nav.Link><Link to="/cart" className='text-dark text-decoration-none'><FaShoppingCart style={{fontSize:"1rem"}} /></Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

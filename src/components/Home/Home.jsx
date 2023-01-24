@@ -5,7 +5,6 @@ import Location from './locations/location';
 import Services from './services/Services';
 import Work from './works/Work';
 import { Link } from 'react-router-dom';
-import Product from './product/Product';
 
 function Home() {
     let [model, setModel] = useState([]);
@@ -60,6 +59,7 @@ function Home() {
             if (e.target.value === item.brand) {
                 return setModel(item.models);
             }
+            return mobilePhones[0].models
 
         })
     }
@@ -87,13 +87,14 @@ function Home() {
 
                         </select>
                         <div className="">
-                            <Link to="/product"><button disabled={product == "" ? true : false} id='go' style={{ backgroundColor: "#fb5112", color: "white", borderRadius: "5px", border: "none", padding: "0.3rem", paddingLeft: "0.5rem", paddingRight: "0.5rem", height: "2rem" }} >Submit</button></Link>
+                            <Link to="/product"><button disabled={product === "" ? true : false} id='go' style={{ backgroundColor: "#fb5112", color: "white", borderRadius: "5px", border: "none", padding: "0.3rem", paddingLeft: "0.5rem", paddingRight: "0.5rem", height: "2rem" }} >Submit</button></Link>
                         </div>
                     </div>
                 </div>
                 <Location />
                 <Services />
                 <Work />
+
             </div>
     )
 }

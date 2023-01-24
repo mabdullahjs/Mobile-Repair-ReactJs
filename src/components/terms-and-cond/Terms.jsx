@@ -5,7 +5,7 @@ function Terms() {
     return (
         <div>
             <div className="main d-flex justify-content-start flex-column" style={{ backgroundImage: `url(${bg})`, height: "20rem" }}>
-                <h1 className='px-4 pt-5 text-white'></h1>
+                {/* <h1 className='px-4 pt-5 text-white'></h1> */}
             </div>
             <div>
                 <h1 className='text-center pt-5'>Terms & Conditions</h1>
