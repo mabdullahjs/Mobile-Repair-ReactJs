@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { AiTwotoneShopping } from "react-icons/ai"
-import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom';
 
 function Product(props) {
 
@@ -5702,12 +5702,17 @@ function Product(props) {
         setProduct(product)
         props.func(product);
     }
+    const navigate = useNavigate();
+    function gotoCart(){
+        navigate("/cart")
+
+    }
 
     return (
         <div>
             <h1 className='text-center'>Service for <span style={{ color: "#fb5112" }}>{model}</span></h1>
             <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
-                <Button style={{ backgroundColor: "#fb5112", border: "none", display: `${block}` }}><Link to="/cart" style={{ textDecoration: "none", color: "white" }}>Go To Cart</Link></Button>
+                <Button onClick={gotoCart} style={{ backgroundColor: "#fb5112", border: "none", display: `${block}` }}>Go To Cart</Button>
             </div>
             <div className='container d-flex justify-content-evenly flex-wrap'>
                 {data}

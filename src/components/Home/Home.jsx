@@ -65,7 +65,6 @@ function Home() {
     }
     function modelName(e) {
         setProduct(e.target.value);
-        console.log(e.target.value);
         localStorage.setItem("model", e.target.value);
     }
 
@@ -75,11 +74,11 @@ function Home() {
                     <h1 className='text-center'><span style={{ fontSize: "2rem", color: "#fb5112" }}>THEEK KER DENGEY</span> <span style={{ color: "#1d3a57", fontSize: "2rem" }}>KABHI BHI KAHI BHI!</span></h1>
                     <div className='medias bg-white py-3 px-5 rounded-2 d-flex'>
 
-                        <select required onChange={selectModel} className="form-select form-select-sm" aria-label="Default select example" style={{ marginRight: "1rem", height: "2rem" }}>
+                        <select required onChange={selectModel} className="form-select form-select-sm" aria-label="Default select example" style={{ width:"10rem",marginRight: "1rem", height: "2rem" }}>
                             <option>Select brand</option>
                             {brandName}
                         </select>
-                        <select required onChange={modelName} id='select' className="form-select form-select-sm" aria-label="Default select example" style={{ marginRight: "1rem", height: "2rem" }}>
+                        <select required onChange={modelName} id='select' className="form-select form-select-sm" aria-label="Default select example" style={{ width:"10rem",marginRight: "1rem", height: "2rem" }}>
                             <option>Select Model</option>
                             {model.map((item, i) => {
                                 return <option key={i}>{item}</option>
