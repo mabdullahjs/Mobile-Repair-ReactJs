@@ -15,8 +15,19 @@ import "./cart.css"
 import Swal from 'sweetalert2';
 import { useState } from 'react';
 import { AiTwotoneDelete } from 'react-icons/ai';
-import { db } from '../../config/config';
-import { collection, addDoc, Timestamp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+import {initializeApp} from 'firebase/app';
+import { getFirestore, collection, addDoc , Timestamp } from 'firebase/firestore/lite';
+const firebaseConfig = {
+    apiKey: "AIzaSyDLGNP1XOYgoFznVvSJbISDuKtcKmw1t7w",
+    authDomain: "tkh-123.firebaseapp.com",
+    projectId: "tkh-123",
+    storageBucket: "tkh-123.appspot.com",
+    messagingSenderId: "913441950184",
+    appId: "1:913441950184:web:8a3e63de38bddb57d0bc5d",
+    measurementId: "G-Q31BZVSHV8"
+};
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 function Cart() {
     let [product, setProducts] = useState(useContext(allProduct));
