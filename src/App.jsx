@@ -18,7 +18,8 @@ const allProduct = createContext()
 function App() {
   let [product ,setProduct]= useState([])
   function addProduct(products){
-    setProduct([...product , products])
+    setProduct(products)
+    // console.log(products)
   }
   return (
     <allProduct.Provider value={product}>

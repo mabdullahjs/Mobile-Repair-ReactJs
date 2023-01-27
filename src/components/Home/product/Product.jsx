@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom';
 function Product(props) {
 
     let model = localStorage.getItem("model");
-    let [block, setBlock] = useState("none");
     let [product, setProduct] = useState([]);
 
     let myArr = [
@@ -5693,7 +5692,6 @@ function Product(props) {
             showConfirmButton: false,
             timer: 1500,
         })
-        setBlock("block")
         product.push({
             service: myArr[0].service[i].service,
             price: myArr[0].service[i].Rs,
@@ -5712,7 +5710,7 @@ function Product(props) {
         <div>
             <h1 className='text-center'>Service for <span style={{ color: "#fb5112" }}>{model}</span></h1>
             <div style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}>
-                <Button onClick={gotoCart} style={{ backgroundColor: "#fb5112", border: "none", display: `${block}` }}>Go To Cart</Button>
+                <Button onClick={gotoCart} style={{ backgroundColor: "#fb5112", border: "none" }}>Go To Cart</Button>
             </div>
             <div className='container d-flex justify-content-evenly flex-wrap'>
                 {data}
