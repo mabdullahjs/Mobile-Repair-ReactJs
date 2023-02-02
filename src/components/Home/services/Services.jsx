@@ -9,7 +9,7 @@ function Services() {
             </div>
             <div className="services">
                 <h1 className='text-center py-4'>Services</h1>
-                <p className='text-center px-5 ' style={{}}>We provide quick service process at our mobile Store. Phixman is one of the best reasonable mobile phone service store, more than 180 repairing service centers in India, where we are fixing all models of smartphones, laptops and other electronic gadgets. Our service included touch screen repair/replacement, liquid and water damage repair, broken and physical damage repair, mainboard chip-level repairing, charging port, power button, side button, camera repair, headphone jack, wifi, bluetooth, battery replacement, software troubleshoot and up-gradation.</p>
+                <p className='text-center px-5 ' style={{}}>We provide quick service process at our mobile Store. Theek Kar Dengey is one of the best reasonable mobile phone service store, more than 180 repairing service centers in Pakistan, where we are fixing all models of smartphones, laptops and other electronic gadgets. Our service included touch screen repair/replacement, liquid and water damage repair, broken and physical damage repair, mainboard chip-level repairing, charging port, power button, side button, camera repair, headphone jack, wifi, bluetooth, battery replacement, software troubleshoot and up-gradation.</p>
             </div>
             <div className="cardss d-flex justify-content-center flex-wrap my-5">
                 <Card className='mx-2 my-2 ' style={{ width: '18rem' }}>
